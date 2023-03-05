@@ -17,7 +17,7 @@ const Projects = () => {
   useEffect(() => {
     console.log(query.pathname)
     query.pathname == '/' ? setHomepage(true): setHomepage(false)
-    axios.get("https://portfolio-38ir.onrender.com/project").then(res=>setProjects(res.data)).catch(err=>console.log(err))
+    axios.get("https://portfolio-38ir.onrender.com/projec").then(res=>setProjects(res.data)).catch(err=>console.log(err))
   }, [])
   
   return(
@@ -30,14 +30,13 @@ const Projects = () => {
     <GridContainer>
     {
       projects.length == 0 ? 
-     <div className='d-flex flex-row '>
-    <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden"></span>
-    </div>
-    <div className='mx-3'>
-    <h3 className=''>Fetching Projects...</h3>
-    </div>
-    </div>
+      <div className="w-100 flex flex-column px-4 py-10  animate-pulse" style={{border:"solid 2px gray", borderRadius:15}}>
+      <div className="bg-slate-500 animate-pulse h-40 w-90 rounded-xl"></div>
+      <div className="bg-slate-500 animate-pulse h-7 w-40 rounded-full mt-4"></div>
+      <div className="bg-slate-500 animate-pulse h-8 w-100 rounded-full mt-5"></div>
+      <div className="bg-slate-500 animate-pulse h-8 w-50 rounded-full mt-8"></div>
+      <div className="bg-slate-500 animate-pulse h-9 w-70 rounded-full mt-3"></div>
+  </div>
       :
       projects.map((blog)=>(
        <Link  href={"/project/" + blog._id}>
