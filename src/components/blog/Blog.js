@@ -12,7 +12,7 @@ const Blog = () => {
   const [blogs, setBlogs] = React.useState([])
 
   useEffect(() => {
-    axios.get("https://portfolio-38ir.onrender.com/blog").then(res=>setBlogs(res.data)).catch(err=>console.log(err))
+    axios.get("https://portfolio-38ir.onrender.com/blg").then(res=>setBlogs(res.data)).catch(err=>console.log(err))
   }, [])
   
   const handleClick = (e) =>{
@@ -29,12 +29,12 @@ const Blog = () => {
        blogs.length == 0 ?
        <Section >
           <div className="w-100 flex flex-column">
-              <div className="bg-slate-500 animate-pulse h-12 w-50 rounded-full"></div>
+              <div className="bg-slate-500 animate-pulse h-10 w-50 rounded-full"></div>
               <div className="bg-slate-500 animate-pulse h-1 w-100 rounded-full mt-12"></div>
-              <div className="bg-slate-500 animate-pulse h-9 w-40 rounded-full mt-3"></div>
-              <div className="bg-slate-500 animate-pulse h-9 w-50 rounded-full mt-3"></div>
-              <div className="bg-slate-500 animate-pulse h-11 w-90 rounded-full mt-20"></div>
-              <div className="bg-slate-500 animate-pulse h-11 w-90 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-7 w-40 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-7 w-50 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-10 w-90 rounded-full mt-20"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-90 rounded-full mt-5"></div>
           </div>
        </Section>
       :
