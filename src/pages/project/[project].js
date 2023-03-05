@@ -58,7 +58,7 @@ const project = () => {
             <span className='mr-4'>
             <i className='fs-3' style={{marginBottom:10}}><AiOutlineGithub /></i>
             </span>
-            <p>Visit Project</p></SecondaryBtn>
+            <p>Source Code</p></SecondaryBtn>
         </a>
 </Section>
         
