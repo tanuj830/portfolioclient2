@@ -17,7 +17,7 @@ const Projects = () => {
   useEffect(() => {
     console.log(query.pathname)
     query.pathname == '/' ? setHomepage(true): setHomepage(false)
-    axios.get("https://portfolio-38ir.onrender.com/projec").then(res=>setProjects(res.data)).catch(err=>console.log(err))
+    axios.get("https://portfolio-38ir.onrender.com/project").then(res=>setProjects(res.data)).catch(err=>console.log(err))
   }, [])
   
   return(
@@ -41,12 +41,12 @@ const Projects = () => {
       projects.map((blog)=>(
        <Link  href={"/project/" + blog._id}>
            <BlogCard  style={{marginBottom:10, cursor:"pointer"}}>
-          <Img src={blog.img} />
+          <Img className='p-3' src={blog.img} style={{borderRadius:15}} />
           <TitleContent>
             <HeaderThree title>{blog.title}</HeaderThree>
           </TitleContent>
-          <CardInfo>
-            {blog.disp.slice(0,105)}<p className='text-primary'>read more</p>
+          <CardInfo className='px-5'>
+            {blog.disp.slice(0,105)}<small className='text-primary'>...read more</small>
           </CardInfo>
           <div style={{marginTop:20}}>
             <TitleContent style={{color:"lightgray"}}>Technologies Used  
