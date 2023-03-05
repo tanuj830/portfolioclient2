@@ -24,14 +24,18 @@ const project = () => {
     return (
    <>
 <div className='container'><Header/></div>
-   {!project ? <Section className='d-flex flex-row '>
-    <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden"></span>
-    </div>
-    <div className='mx-3'>
-    <h3 className=''>Loading...</h3>
-    </div>
-    </Section>
+   {!project.disp ?
+   <Section>
+           <div className="w-100 flex flex-column">
+              <div className="bg-slate-500 animate-pulse h-10 w-50 rounded-full"></div>
+              <div className="bg-slate-500 animate-pulse h-40 w-90 rounded-xl mt-4"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-100 rounded-full mt-10"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-50 rounded-full mt-2"></div>
+              <div className="bg-slate-500 animate-pulse h-10 w-90 rounded-full mt-12"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-50 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-50 rounded-full mt-3"></div>
+          </div>
+   </Section>
     :
                 <Section>
         <SectionTitle>
@@ -44,9 +48,19 @@ const project = () => {
             {project.disp}
         </SectionSubText>
         
-        <a className='text-decoration-none' target="_blank"  href={project.project_url}><SecondaryBtn><i className='mx-3' style={{marginBottom:10}}><SiMinutemailer /></i>Visit Project</SecondaryBtn></a>
-        <a target='_blank' href={project.code_url}><SecondaryBtn><i className='mx-2  align-item-center ' style={{marginBottom:10}}><AiOutlineGithub  /></i> Code Repositry</SecondaryBtn></a>
-    </Section>
+        <a className='text-decoration-none ' target="_blank"  href={project.project_url}><SecondaryBtn className='flex items-center justify-center'>
+            <span className='mr-4'>
+            <i className='fs-3' style={{marginBottom:10}}><SiMinutemailer /></i>
+            </span>
+            <p>Visit Project</p></SecondaryBtn>
+        </a>
+        <a className='text-decoration-none ' target="_blank"  href={project.code_url}><SecondaryBtn className='flex items-center justify-center'>
+            <span className='mr-4'>
+            <i className='fs-3' style={{marginBottom:10}}><AiOutlineGithub /></i>
+            </span>
+            <p>Visit Project</p></SecondaryBtn>
+        </a>
+</Section>
         
      }
      <Footer />

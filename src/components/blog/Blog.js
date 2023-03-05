@@ -12,7 +12,7 @@ const Blog = () => {
   const [blogs, setBlogs] = React.useState([])
 
   useEffect(() => {
-    axios.get("https://portfolio-38ir.onrender.com/blg").then(res=>setBlogs(res.data)).catch(err=>console.log(err))
+    axios.get("https://portfolio-38ir.onrender.com/blog").then(res=>setBlogs(res.data)).catch(err=>console.log(err))
   }, [])
   
   const handleClick = (e) =>{
