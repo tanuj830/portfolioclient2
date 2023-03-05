@@ -27,14 +27,16 @@ const Blog = () => {
       </Section>
      {
        blogs.length == 0 ?
-       <Section className='d-flex flex-row '>
-    <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden"></span>
-    </div>
-    <div className='mx-3'>
-    <h3 className=''>Loading...</h3>
-    </div>
-    </Section>
+       <Section >
+          <div className="w-100 flex flex-column">
+              <div className="bg-slate-500 animate-pulse h-12 w-50 rounded-full"></div>
+              <div className="bg-slate-500 animate-pulse h-1 w-100 rounded-full mt-12"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-40 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-9 w-50 rounded-full mt-3"></div>
+              <div className="bg-slate-500 animate-pulse h-11 w-90 rounded-full mt-20"></div>
+              <div className="bg-slate-500 animate-pulse h-11 w-90 rounded-full mt-3"></div>
+          </div>
+       </Section>
       :
       blogs.reverse().map(blog=>(
         <Section>
