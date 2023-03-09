@@ -40,13 +40,13 @@ const Projects = () => {
       :
       projects.map((blog)=>(
        <Link  href={"/project/" + blog._id}>
-           <BlogCard  style={{marginBottom:10, cursor:"pointer"}}>
-          <Img className='p-3' src={blog.img} style={{borderRadius:15}} />
+           <BlogCard className='border-1 border-slate-700'  style={{marginBottom:10, cursor:"pointer"}}>
+          <Img className='p-[4px]' src={blog.img} style={{borderTopLeftRadius:10, borderTopRightRadius:10}} />
           <TitleContent>
             <HeaderThree title>{blog.title}</HeaderThree>
           </TitleContent>
-          <CardInfo className='px-5'>
-            {blog.disp.slice(0,105)}<small className='text-primary'>...read more</small>
+          <CardInfo className='px-4'>
+            {blog.disp.slice(0,105)}<small className='text-primary'> read more</small>
           </CardInfo>
           <div style={{marginTop:20}}>
             <TitleContent style={{color:"lightgray"}}>Technologies Used  

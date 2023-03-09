@@ -9,7 +9,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
 /* padding: 3rem; */
 place-items: center;
 /* column-gap: 2rem; */
@@ -24,9 +24,14 @@ row-gap: 3rem;
 `
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(148,187,233,100);  //rgba(80, 78, 78, 0.5)
+  /* box-shadow: 3px 3px 20px rgba(148,187,231,0);  //rgba(80, 78, 78, 0.5) */
   text-align: center;
   width: 70%;
+
+  &:hover{
+    box-shadow: 3px 3px 20px rgba(148,187,233,100);  //rgba(80, 78, 78, 0.5)
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
