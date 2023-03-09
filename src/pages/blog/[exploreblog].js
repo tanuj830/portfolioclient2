@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {useRouter} from 'next/router'
 import axios from 'axios'
-import { Section, SectionText, SectionTitle, SectionSubText, SecondaryBtn, SectionDivider } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, ImpText, SecondaryBtn, SectionDivider } from '../../styles/GlobalComponents';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer'
 
@@ -20,7 +20,7 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${id}`).then(res=>setBlog(re
 
   return (
     <>
-<div className='container'><Header/></div>
+<div className=''><Header/></div>
  {
   !blog.disp ?
   <Section>
@@ -36,8 +36,8 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${id}`).then(res=>setBlog(re
     {blog.title} 
   </SectionTitle>
   <small style={{color:"grey", marginBottom:30}}>Published On: {blog.Date ? blog.Date.slice(0,10) : blog.Date}</small>
-  <SectionText dangerouslySetInnerHTML={{ __html : blog.disp}}>
-  </SectionText>
+  <ImpText className='text-justify' dangerouslySetInnerHTML={{ __html : blog.disp}}>
+  </ImpText>
 </Section>
  }
     <Footer/>
