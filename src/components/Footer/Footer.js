@@ -8,12 +8,53 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 import dynamic from "next/dynamic";
 
 
+const QuillNoSSRWrapper = dynamic(import('react-quill'), {	
+  ssr: false,
+  loading: () => <p>Loading ...</p>,
+  })
+  
+// const modules = {
+// toolbar: [
+//   [{ header: '1' }, { header: '2' }, { font: [] }],
+//   [{ size: [] }],
+//   ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+//   [
+//     { list: 'ordered' },
+//     { list: 'bullet' },
+//     { indent: '-1' },
+//     { indent: '+1' },
+//   ],
+//   ['link', 'image', 'video'],
+//   ['clean'],
+// ],
+// clipboard: {
+//   // toggle to add extra line breaks when pasting HTML:
+//   matchVisual: false,
+// },
+// }
+// /*
+// * Quill editor formats
+// * See https://quilljs.com/docs/formats/
+// */
+// const formats = [
+// 'header',
+// 'font',
+// 'size',
+// 'bold',
+// 'italic',
+// 'underline',
+// 'strike',
+// 'blockquote',
+// 'list',
+// 'bullet',
+// 'indent',
+// 'link',
+// 'image',
+// 'video',
+// ]
 const Footer = () => {
 
-  const QuillNoSSRWrapper = dynamic(import('react-quill'), {
-    ssr: false,
-    // loading: () => <p>Loading ...</p>,
-  })
+
 
   const [key, setKey] = React.useState("")
   const [text, setText] = React.useState("")
@@ -83,7 +124,7 @@ const Footer = () => {
                     <input type='text' name='project_url' placeholder='website link' onChange={handleProject}/>
                     <input type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>
 
-                    <QuillNoSSRWrapper value={projectText} onChange={setProjectText} theme="snow" />
+                    <QuillNoSSRWrapper  value={projectText} onChange={setProjectText} theme="snow" />
 
                     <button onClick={submitProject} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </Section>
