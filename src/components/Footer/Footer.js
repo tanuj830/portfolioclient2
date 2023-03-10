@@ -108,13 +108,12 @@ const Footer = () => {
           <LinkTitle>Admin Pannel</LinkTitle>
           <input style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
           {
-              key===" " ? 
+              key==="mai321" ? 
               <>
                <Section>
-                    <input type='text' onChange={e=>setTitle({title: e.target.value})}/>
-
+                    <input type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
+                    <input type='text' placeholder='Tag Here' onChange={e=>setTitle({tag: e.target.value})}/>
                     <QuillNoSSRWrapper value={text} onChange={setText} theme="snow" />
-
                     <button onClick={handleClick} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </Section>
              
@@ -123,9 +122,7 @@ const Footer = () => {
                     <input type='text' name='tech' placeholder='technologies used' onChange={handleProject}/>
                     <input type='text' name='project_url' placeholder='website link' onChange={handleProject}/>
                     <input type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>
-
                     <QuillNoSSRWrapper  value={projectText} onChange={setProjectText} theme="snow" />
-
                     <button onClick={submitProject} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </Section>
                     </>
