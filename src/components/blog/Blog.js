@@ -10,6 +10,7 @@ import Footer from "../Footer/Footer";
 const Blog = () => {
 
   const [blogs, setBlogs] = React.useState([])
+  const [tags, setTags] = React.useState("")
 
   useEffect(() => {
     axios.get("https://portfolio-38ir.onrender.com/blog").then(res=>setBlogs(res.data)).catch(err=>console.log(err))
@@ -19,9 +20,25 @@ const Blog = () => {
     window.location.href=`/blog/${e}`
   }
 
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+
+    axios.get(`https://portfolio-38ir.onrender.com/blog/bytag`,{params:{tag:{tags}}}).then(res=>console.log(res.data)).catch(err=>console.log(err))
+  }
+
   return (
     <> 
 <div className='container'><Header/></div>
+<Section>
+  <div className="flex justify-center items-center w-100">
+      <div className="w-100 mr-8">
+        <input placeholder="Search (Ex: Graph Problems)" onChange={e=>setTags(e.target.value)} className="px-3 py-4 border-1 border-slate-600 bg-transparent rounded-md w-100" />
+      </div>
+      <div>
+      <SecondaryBtn onClick={handleSubmit}>Search</SecondaryBtn>
+      </div>
+  </div>
+</Section>
       <Section>
         <SectionTitle>Blogs</SectionTitle>
       </Section>
