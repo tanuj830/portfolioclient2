@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 
 const Blog = () => {
 
+  const [SearchedBlogs, setSearchedBlogs] = React.useState([])
   const [blogs, setBlogs] = React.useState([])
   const [tags, setTags] = React.useState("")
 
@@ -23,22 +24,40 @@ const Blog = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
 
-    axios.get(`https://portfolio-38ir.onrender.com/blog/bytag`,{params:{tag:tags}}).then(res=>console.log(res.data)).catch(err=>console.log(err))
+    axios.get(`https://portfolio-38ir.onrender.com/blog/bytag`,{params:{tag:tags}}).then(res=>setSearchedBlogs(res.data)).catch(err=>console.log(err))
   }
 
   return (
     <> 
 <div className='container'><Header/></div>
+
+{/* Search component */}
 <Section>
   <div className="flex justify-center items-center w-100">
-      <div className="w-100 mr-8">
-        <input placeholder="Search (Ex: Graph Problems)" onChange={e=>setTags(e.target.value)} className="px-3 py-4 border-1 border-slate-600 bg-transparent rounded-md w-100" />
+      <div className="w-100 mr-3  flex justify-center items-start">
+        <input placeholder="Search (Ex: Graph Problems)" onChange={e=>setTags(e.target.value)} className="md:px-3 md:py-4 px-2 py-3 border-1 border-slate-500 bg-transparent rounded-md w-100" />
       </div>
-      <div>
-      <SecondaryBtn onClick={handleSubmit}>Search</SecondaryBtn>
+      <div className="flex justify-start items-center ">
+      <button className="border-1 border-slate-500 px-6 py-3 rounded-full hover:bg-white hover:text-slate-900" onClick={handleSubmit}>Search</button>
       </div>
   </div>
 </Section>
+
+{/* Showing Searched Data */}
+  {
+    setSearchedBlogs.length > 0 ?  SearchedBlogs.reverse().map(blog=>(
+      <Section>
+        <SectionTitle>Searched Related Data</SectionTitle>
+        <hr />
+      <SectionSubText>Published on {blog.Date.slice(0,10)}</SectionSubText>
+      <SectionText>{blog.title}</SectionText>
+      <SectionSubText>{parse(blog.disp.slice(0,300))}</SectionSubText> 
+      <SecondaryBtn  onClick={()=>handleClick(blog._id)}>Read More</SecondaryBtn>
+    </Section>
+    )) : null
+  }
+
+{/* Showing all blogs */}
       <Section>
         <SectionTitle>Blogs</SectionTitle>
       </Section>
