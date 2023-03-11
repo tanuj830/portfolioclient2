@@ -48,18 +48,17 @@ const Blog = () => {
 {
   setSearchedBlogs.length > 0 ?
 <>
-<Section><SectionTitle>Searched Related Data</SectionTitle></Section>
+<Section><SectionTitle>Searched Related Data</SectionTitle>
   {
      SearchedBlogs.reverse().map(blog=>(
-      <Section>
-        <hr />
+       <> <hr />
       <SectionSubText>Published on {blog.Date.slice(0,10)}</SectionSubText>
       <SectionText>{blog.title}</SectionText>
       <SectionSubText>{parse(blog.disp.slice(0,300))}</SectionSubText> 
       <SecondaryBtn  onClick={()=>handleClick(blog._id)}>Read More</SecondaryBtn>
+      </>)) 
+    }
     </Section>
-    )) 
-  }
 </>: null
 }
 {/* Showing all blogs */}
