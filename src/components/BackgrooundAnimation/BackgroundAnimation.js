@@ -3,7 +3,7 @@ import React from 'react';
 const BackgroundAnimation = () => (
   
   <div>
-    <img style={{overflow:"hidden", width:"35vw"}} src=" https://cdn.dribbble.com/users/2844978/screenshots/20459140/media/90ad22fce57ff27c49ffc03aee14735a.gif"/>
+    {/* <img style={{overflow:"hidden", width:"35vw"}} src=" https://cdn.dribbble.com/users/2844978/screenshots/20459140/media/90ad22fce57ff27c49ffc03aee14735a.gif"/> */}
     {/* https://cdn.dribbble.com/users/4856834/screenshots/19912110/media/ae1bf3d0e5bc3af7c78f7cfb7c68e093.gif */}
    
     {/* https://cdn.dribbble.com/users/398475/screenshots/19917541/media/0978a77945cbafe46422defed41ab676.gif */}

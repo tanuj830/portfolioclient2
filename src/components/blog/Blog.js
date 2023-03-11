@@ -47,6 +47,7 @@ const Blog = () => {
 
 {
   SearchedBlogs.length > 0 ?
+
 <>
 <Section><SectionTitle>Searched Related Data</SectionTitle>
   {
