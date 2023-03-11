@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SiLeetcode } from 'react-icons/si';
-import { DiCssdeck } from 'react-icons/di';
+// import { DiCssdeck } from 'react-icons/di';
+import { GiBurningMeteor } from 'react-icons/gi';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
@@ -9,7 +10,7 @@ const Header = () =>  (
     <Container>
       <Div1>
         <Link href="/">
-        <a style={{display:"flex", alignItems:"center", color:"white"}}><DiCssdeck size="3rem" /><Span>tanujbhatt.in</Span></a>
+        <a style={{display:"flex", alignItems:"center", color:"white"}}><GiBurningMeteor size="2rem" /><Span className='ml-1'>tanujbhatt.in</Span></a>
         </Link>
       </Div1>
       <Div2>
