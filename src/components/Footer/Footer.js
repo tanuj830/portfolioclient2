@@ -59,16 +59,18 @@ const Footer = () => {
   const [key, setKey] = React.useState("")
   const [text, setText] = React.useState("")
   const [projectText, setProjectText] = React.useState("")
-  const [title, setTitle] = React.useState({title:"", tag:""})
+  const [title, setTitle] = React.useState({})
+  const [tag, setTag] = React.useState({})
   const [projectData, setProjectData] = React.useState({})
-
+  
   const handleClick = () =>{
     console.log(text)
     const data={
       disp: text
     }
     const mergedObj = {
-      ...title, ...data
+   
+      ...title, ...tag, ...data
     }
     axios.post("https://portfolio-38ir.onrender.com/blog", mergedObj).then(res=>console.log(res)).catch(err=>console.log(err))
   }
@@ -88,7 +90,6 @@ const Footer = () => {
     const mergedObj = {
       ...projectData, ...data
     }
-
     axios.post("https://portfolio-38ir.onrender.com/project", mergedObj).then(res=>console.log(res)).catch(err=>console.log(err))
   }
  
@@ -112,7 +113,7 @@ const Footer = () => {
               <>
                <Section>
                     <input type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
-                    <input type='text' placeholder='Tag Here' onChange={e=>setTitle({tag: e.target.value})}/>
+                    <input type='text' placeholder='Tag Here' onChange={e=>setTag({tag: e.target.value})}/>
                     <QuillNoSSRWrapper value={text} onChange={setText} theme="snow" />
                     <button onClick={handleClick} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </Section>
