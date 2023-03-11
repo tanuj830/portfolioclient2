@@ -59,7 +59,7 @@ const Footer = () => {
   const [key, setKey] = React.useState("")
   const [text, setText] = React.useState("")
   const [projectText, setProjectText] = React.useState("")
-  const [title, setTitle] = React.useState({})
+  const [title, setTitle] = React.useState({title:"", tag:""})
   const [projectData, setProjectData] = React.useState({})
 
   const handleClick = () =>{
