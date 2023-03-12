@@ -7,7 +7,7 @@ export const FunActivites = [
   },
   {
     title: 'Popular meme	templates',
-    description: "Keep your eye on some of the popular memes around globe ",
+    description: "Keep your eye on some of the popular memes around the globe.",
     href: "fun/memes",
     id: 1,
   },
