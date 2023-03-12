@@ -36,7 +36,7 @@ const MemeComponent = () => {
     <Section>
         {
             memes ? <div className='flex items-center justify-center'>
-                   <div className='w-50'>
+                   <div className='w-100 md:w-50'>
 
                    {
                     memes.preview  ?  <div className='flex justify-between items-center'>
@@ -55,7 +55,7 @@ const MemeComponent = () => {
                    </div>
             </div> : null
         }
-        <p className='text-center mt-10  text-slate-400'>Powered by Redit</p>
+        <p className='text-center mt-10  text-slate-400'>Powered by Reddit</p>
     </Section>
     <Footer />
     </>

@@ -1,13 +1,13 @@
 export const FunActivites = [
   {
     title: 'Predict nationality based on a name',
-    description: "On the basis of your name let me predict your home country.",
+    description: "On the basis of your name, let me predict your home country.",
     href: "fun/predict-country",
     id: 0,
   },
   {
-    title: 'Popular meme	templates',
-    description: "Keep your eye on some of the popular memes around the globe.",
+    title: 'Popular memes',
+    description: "Keep your eye on some of the popular memes around the globe.\n Powered by Reddit",
     href: "fun/memes",
     id: 1,
   },
