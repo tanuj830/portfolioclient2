@@ -36,7 +36,7 @@ const Header = () =>  (
         </li> */}
         <li>
           <Link href="/fun">
-            <NavLink>Chill Zone</NavLink>
+            <NavLink>ChillZone</NavLink>
           </Link>
         </li>
       </Div2>
