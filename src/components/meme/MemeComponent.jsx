@@ -7,38 +7,55 @@ import Footer from '../Footer/Footer'
 
 const MemeComponent = () => {
 
-    const [memes, setMemes] = useState([])
-
-    useEffect(() => {
-        axios.get("https://api.imgflip.com/get_memes").then(res=>setMemes(res.data.data.memes)).catch(err=>console.log(err))
-    }, [])
+    const [memes, setMemes] = useState({})
     
+    const handleClick = () =>{
+        axios.get("https://meme-api.com/gimme").then(res=>setMemes(res.data)).catch(err=>console.log(err))
+    }
+
   return (
     <>
     <Header />
     <Section>
         <SectionTitle className=''>
-        Popular Memes Templates╭(◔ ◡ ◔)/ 
+        Popular Memes╭(◔ ◡ ◔)/ 
         </SectionTitle>
-        <SectionSubText className='uppercase text-xl'>Just Explore...!</SectionSubText>
+
+        <div className='flex items-center justify-between'>
+            <div>
+            <SectionSubText className='uppercase text-xl'>Just Explore...!</SectionSubText>
+            </div>
+            <div>
+                {
+                    memes.preview ? <SecondaryBtn onClick={handleClick} >Generate Next Meme</SecondaryBtn> : <SecondaryBtn onClick={handleClick} >Show Meme</SecondaryBtn>
+                }
+            </div>
+        </div>
+
     </Section>
     <Section>
         {
-            memes.length > 0 ? <>
-                    <div className='grid grid-cols-1 md:grid-cols-5 gap-6'>
-                {
-                         memes.map(meme=>(
-                            <div className='border-1 relative  border-slate-600 rounded-md' key={meme.id}>
-                                <img  width={meme.width} height={meme.height} src={meme.url} alt="" />
-                                <div className='bottom-0 w-100 bg-black absolute'>
-                                <ImpText2 className=' text-slate-100 px-2 py-1 text-'>{meme.name}</ImpText2>
-                                </div>
-                            </div>
-                        ))
-                }
-                    </div>
-            </> : null
+            memes ? <div className='flex items-center justify-center'>
+                   <div className='w-50'>
+
+                   {
+                    memes.preview  ?  <div className='flex justify-between items-center'>
+                    <div><h6 className='text-slate-400'>Posted by <b className='text-slate-300'>{memes.author}</b></h6></div>
+                    <div><h6 className='text-slate-400'>Likes <b className='text-slate-300'>{memes.ups}</b></h6></div>
+                </div>: null
+                   }
+
+                        <div>
+                            <h1>{memes.title}</h1>
+                        </div>
+
+                        <div>
+                            <img src={memes.url} alt="" />
+                        </div>
+                   </div>
+            </div> : null
         }
+        <p className='text-center mt-10  text-slate-400'>Powered by Redit</p>
     </Section>
     <Footer />
     </>
