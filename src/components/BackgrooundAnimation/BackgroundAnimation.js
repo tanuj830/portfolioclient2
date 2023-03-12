@@ -2,16 +2,16 @@ import React from 'react';
 
 const BackgroundAnimation = () => (
   
-  <div>
-    {/* <img style={{overflow:"hidden", width:"35vw"}} src=" https://cdn.dribbble.com/users/2844978/screenshots/20459140/media/90ad22fce57ff27c49ffc03aee14735a.gif"/> */}
+  <div className="blur-xs"> 
+    {/* <img style={{overflow:"hidden", width:"35vw",}} className="mix-blend- blur-lg rounded-lg" src="https://cdn.dribbble.com/users/1139587/screenshots/5823943/media/0c8e8fddacdf7c01719d9950e02e8b1d.gif"/> */}
     {/* https://cdn.dribbble.com/users/4856834/screenshots/19912110/media/ae1bf3d0e5bc3af7c78f7cfb7c68e093.gif */}
    
     {/* https://cdn.dribbble.com/users/398475/screenshots/19917541/media/0978a77945cbafe46422defed41ab676.gif */}
     {/* https://cdn.dribbble.com/users/897686/screenshots/20470105/media/68f30216a808e85bc4c58e2a2b7ca4a0.gif */}
 
-
-    {/* <svg
-      className="BgAnimation__svg"
+{/* 
+    <svg
+      className="BgAnimation__svg blur-sm"
       viewBox="0 0 602 602"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +366,7 @@ const BackgroundAnimation = () => (
           <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
         </linearGradient>
       </defs>
-    </svg> */}
+    </svg>  */}
   </div>
 );
 
