@@ -13,12 +13,12 @@ const index = () => {
 
     <Section>
         <SectionTitle>Some Fun Stuff To Explore</SectionTitle>
-        <div className='grid md:grid-cols-3 gap-3 grid-cols-1'>
+        <div className='grid md:grid-cols-3 gap-5 mt-5 grid-cols-1'>
     {
         FunActivites.map(fun=>(   
             <div className='bg-[#212D45] p-6 rounded-lg'>
               <h2 className=' text-5xl'>{fun.title}
-              <Link href={"/"+ fun.href}><FiExternalLink /></Link>
+              <Link href={"/"+ fun.href}><FiExternalLink className='cursor-pointer' /></Link>
               </h2>
               <BoxText className='mt-6'>{fun.description}</BoxText>
             </div>

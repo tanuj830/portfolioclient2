@@ -29,9 +29,14 @@ const Header = () =>  (
             <NavLink>Blog</NavLink>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/">
             <NavLink>Technologies</NavLink>
+          </Link>
+        </li> */}
+        <li>
+          <Link href="/fun">
+            <NavLink>Chill Zone</NavLink>
           </Link>
         </li>
       </Div2>
