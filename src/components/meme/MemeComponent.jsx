@@ -45,12 +45,14 @@ const MemeComponent = () => {
                 </div>: null
                    }
 
+                        <div className='flex items-center justify-center flex-col'>
                         <div>
                             <h1>{memes.title}</h1>
                         </div>
 
                         <div>
                             <img src={memes.url} alt="" />
+                        </div>
                         </div>
                    </div>
             </div> : null
