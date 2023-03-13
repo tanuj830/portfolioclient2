@@ -55,7 +55,7 @@ const MemeComponent = () => {
                    </div>
             </div> : null
         }
-        <p className='text-center mt-10  text-slate-400'></p>
+        <p className='text-center mt-10  text-slate-400'>Powered by Reddit</p>
     </Section>
     <Footer />
     </>
