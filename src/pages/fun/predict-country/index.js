@@ -24,7 +24,7 @@ const index = () => {
         <SectionTitle>
             Predicting Country By Name
         </SectionTitle>
-        <div className='w-100'>
+        <div className='w-100 mt-12'>
             <input type="text" placeholder='Enter Your First OR Last Name(avoid spaces)' onChange={e=>setName(e.target.value)} className='px-2 md:px-8 py-4 rounded-md w-100 text-black' />
             <SecondaryBtn className='' onClick={handleSubmit}>Search</SecondaryBtn>
         </div>
