@@ -29,7 +29,7 @@ const exploreblog = ({data}) => {
   </SectionTitle>
   <small style={{color:"grey", marginBottom:30}}>Published On: {blog.Date ? blog.Date.slice(0,10) : blog.Date}</small>
   <ImpText className='text-justify' dangerouslySetInnerHTML={{ __html : blog.disp}}>
-  </ImpText>
+  
 </Section>
  }
     <Footer/>
