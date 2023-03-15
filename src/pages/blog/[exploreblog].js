@@ -6,20 +6,12 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer'
 
 
-const exploreblog = () => {
-
-const route = useRouter()
-const id = route.query.exploreblog
-
-const [blog, setBlog] = React.useState({})
-
-useEffect(() => {
-  if(id)
-axios.get(`https://portfolio-38ir.onrender.com/blog/${id}`).then(res=>setBlog(res.data)).catch(err=>console.log(err))
-}, [id])
+const exploreblog = ({data}) => {
+    
+  const [blog, setBlog] = React.useState(data)
 
   return (
-    <>
+      <>
 <div className=''><Header/></div>
  {
   !blog.disp ?
@@ -44,5 +36,17 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${id}`).then(res=>setBlog(re
   </>
   )
 }
+
+
+//server side rendring
+export async function getServerSideProps(ctx) {
+  const res = await fetch(`https://portfolio-38ir.onrender.com/blog/${ctx.query.exploreblog}`)
+  const data = await res.json()
+  
+  return {
+    props: {data }, 
+  }
+}
+
 
 export default exploreblog

@@ -56,7 +56,7 @@ const Blog = () => {
       <SectionSubText>Published on {blog.Date.slice(0,10)}</SectionSubText>
       <SectionText>{blog.title}</SectionText>
       <SectionSubText>{parse(blog.disp.slice(0,300))}</SectionSubText> 
-      <SecondaryBtn  onClick={()=>handleClick(blog._id)}>Read More</SecondaryBtn>
+      <SecondaryBtn><Link href={"/blog/" + blog._id}>Read More</Link></SecondaryBtn>
       </>)) 
     }
     </Section>

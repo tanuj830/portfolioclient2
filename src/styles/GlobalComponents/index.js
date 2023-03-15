@@ -282,7 +282,7 @@ export const LinkIconImg = styled.div`
 
 
 // text for blog and project page
-export const ImpText = styled.p`
+export const ImpText = styled.div`
   max-width: 800px;
   font-size: 22px;
   line-height: 36px;
