@@ -14,11 +14,11 @@ const Header = () =>  (
         </Link>
       </Div1>
       <Div2>
-        <li>
+        {/* <li>
           <Link href="/">
             <NavLink>About</NavLink>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/project">
             <NavLink>Projects</NavLink>
