@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
+import Services from '../../components/services/Services'
 import { Section } from '../../styles/GlobalComponents'
 
 const index = () => {
@@ -9,7 +10,7 @@ const index = () => {
     <Header />
     
     <Section>
-        Services Page
+        <Services />
     </Section>
 
     <Footer />   

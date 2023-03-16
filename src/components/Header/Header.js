@@ -29,11 +29,11 @@ const Header = () =>  (
             <NavLink>Blog</NavLink>
           </Link>
         </li>
-        {/* <li>
-          <Link href="/">
-            <NavLink>Technologies</NavLink>
+        <li>
+          <Link href="/services">
+            <NavLink>Services</NavLink>
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link href="/fun">
             <NavLink>ChillZone</NavLink>
