@@ -24,7 +24,7 @@ const Blog = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
 
-    axios.get(`https://portfolio-38ir.onrender.com/blog/bytag`,{params:{tag:tags}}).then(res=>setSearchedBlogs(res.data)).catch(err=>console.log(err))
+    axios.get(`https://portfolio-38ir.onrender.com/blog/bytag`,{params:{tag:tags,title:tags, disp:tags}}).then(res=>setSearchedBlogs(res.data)).catch(err=>console.log(err))
   }
 
   return (
