@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Section, SectionText, SectionTitle, ImpText, SecondaryBtn, SectionDivider } from '../../styles/GlobalComponents';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer'
+import RelatedBlogs from '../../components/blog/RelatedBlogs';
 
 
 const exploreblog = ({data}) => {
@@ -32,6 +33,9 @@ const exploreblog = ({data}) => {
   </ImpText>
 </Section>
  }
+
+ <RelatedBlogs tag= {blog.tag} title={blog.title} disp={blog.disp}/>
+
     <Footer/>
   </>
   )
