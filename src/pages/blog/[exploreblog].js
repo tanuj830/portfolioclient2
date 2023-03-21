@@ -7,9 +7,14 @@ import Footer from '../../components/Footer/Footer'
 import RelatedBlogs from '../../components/blog/RelatedBlogs';
 
 
-const exploreblog = ({data}) => {
+const exploreblog = () => {
     
-  const [blog, setBlog] = React.useState(data)
+  const [blog, setBlog] = React.useState({})
+  const route = useRouter()
+
+  useEffect(() => {
+axios.get(`https://portfolio-38ir.onrender.com/blog/${route.query.exploreblog}`).then(res=>setBlog(res.data)).catch(err=>console.log(err)) 
+}, )
 
   return (
       <>
@@ -34,7 +39,7 @@ const exploreblog = ({data}) => {
 </Section>
  }
 
- <RelatedBlogs tag= {blog.tag} title={blog.title} disp={blog.disp}/>
+ <RelatedBlogs tag= {blog.tag}/>
 
     <Footer/>
   </>
@@ -42,15 +47,15 @@ const exploreblog = ({data}) => {
 }
 
 
-//server side rendring
-export async function getServerSideProps(ctx) {
-  const res = await fetch(`https://portfolio-38ir.onrender.com/blog/${ctx.query.exploreblog}`)
-  const data = await res.json()
+// //server side rendring
+// export async function getServerSideProps(ctx) {
+//   const res = await fetch
+//   const data = await res.json()
   
-  return {
-    props: {data }, 
-  }
-}
+//   return {
+//     props: {data }, 
+//   }
+// }
 
 
 export default exploreblog

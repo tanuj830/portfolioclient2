@@ -15,7 +15,8 @@ const Hero = (props) => (
       <SectionText>
       Tanuj Bhatt is a skilled web developer and blockchain enthusiast with a passion for innovative technology. With extensive experience in designing and developing websites and blockchain applications.
       </SectionText>
-     <div className='flex items-center'>
+
+     <div className='mb-4 flex items-center'>
      <h3>
       Stack    | 
         
