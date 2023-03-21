@@ -13,7 +13,10 @@ const Hero = (props) => (
         My Personal Portfolio */}
       </SectionTitle>
       <SectionText>
-      Tanuj Bhatt is a skilled web developer and blockchain enthusiast with a passion for innovative technology. With extensive experience in designing and developing websites and blockchain applications. My commitment to staying up-to-date with the latest advancements in the industry has made me a valuable asset to any team I works with.
+      Tanuj Bhatt is a skilled web developer and blockchain enthusiast with a passion for innovative technology. With extensive experience in designing and developing websites and blockchain applications.
+      </SectionText>
+      <SectionText>
+      Stack  | ReactJS NextJS NodeJS ExpressJS MongoDB
       </SectionText>
       <Button onClick={()=>window.location = "/blog"}>Read Blogs</Button>
     </LeftSection>
