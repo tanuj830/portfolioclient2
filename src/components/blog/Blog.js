@@ -4,7 +4,7 @@ import Header from "../Header/Header"
 import React from 'react';
 import { Section, SectionText, SectionTitle, SectionSubText, SecondaryBtn, SectionDivider } from '../../styles/GlobalComponents';
 const parse = require('html-react-parser');
-import { Link } from "next/link";
+import Link  from "next/link";
 import Footer from "../Footer/Footer";
 
 const Blog = () => {
