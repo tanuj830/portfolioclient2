@@ -94,7 +94,7 @@ const Footer = () => {
   }
  
   return (
-    <FooterWrapper>
+    <FooterWrapper className='brightness-200'>
       <hr />
       <LinkList>
         <LinkColumn>
@@ -107,7 +107,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Admin Pannel</LinkTitle>
-          <input style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
+          <input  style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
           {
               key==="mai321" ? 
               <>

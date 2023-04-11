@@ -25,7 +25,7 @@ const Projects = () => {
     {
       homepage == false ? <div className='container'><Header/></div> : null
     }
-    <Section  nopadding id='projects'>
+    <Section className=''  nopadding id='projects'>
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
     {
@@ -47,7 +47,7 @@ const Projects = () => {
             <HeaderThree title>{blog.title}</HeaderThree>
           </TitleContent>
           <CardInfo className='px-4'>
-            {blog.disp.slice(0,105)}<small className='text-primary'> read more</small>
+            {blog.disp.slice(0,125)}.....
           </CardInfo>
           <div style={{marginTop:20}}>
             <TitleContent style={{color:"lightgray"}}>Technologies Used  
