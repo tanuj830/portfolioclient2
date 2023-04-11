@@ -20,22 +20,22 @@ const Header = () =>  (
           </Link>
         </li> */}
         <li>
-          <Link href="/project">
+          <Link className="brightness-200" href="/project">
             <NavLink>Projects</NavLink>
           </Link>
         </li>
         <li>
-          <Link href="/blog">
+          <Link className="brightness-200" href="/blog">
             <NavLink>Blog</NavLink>
           </Link>
         </li>
         <li>
-          <Link href="/services">
+          <Link className="brightness-200" href="/services">
             <NavLink>Services</NavLink>
           </Link>
         </li>
         <li>
-          <Link href="/fun">
+          <Link className="brightness-200" href="/fun">
             <NavLink>ChillZone</NavLink>
           </Link>
         </li>

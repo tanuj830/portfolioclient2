@@ -42,6 +42,7 @@ const Projects = () => {
        <Link  href={"/project/" + blog._id}>
            <BlogCard className='border-1 border-slate-700'  style={{marginBottom:10, cursor:"pointer"}}>
           <Img className='p-[4px]' src={blog.img} style={{borderTopLeftRadius:10, borderTopRightRadius:10}} />
+          <div className='p-5'>
           <TitleContent>
             <HeaderThree title>{blog.title}</HeaderThree>
           </TitleContent>
@@ -59,6 +60,7 @@ const Projects = () => {
 
               </p>
             </TagList>
+          </div>
           </div>
           {/* <UtilityList>
             <ExternalLinks href={blog.visit}>Code</ExternalLinks>
