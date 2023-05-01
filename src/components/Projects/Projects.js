@@ -46,7 +46,7 @@ const Projects = () => {
       <Link className="" href={"/project/" + p._id}>
         <div  className="p-8 md:w-1/2 cursor-pointer ">
           
-        <div className="h-full border-2 border-gray-200 border-opacity-60  rounded-lg overflow-hidden hover:shadow-lg transition-all duration-700">
+        <div className="h-full border-2 border-gray-200 border-opacity-60  rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
           <img className="lg:h-48 md:h-36 w-full  object-center shadow-sm " src={p.img} alt="blog"/>
           <div className="p-6 ">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">tech</h2>
