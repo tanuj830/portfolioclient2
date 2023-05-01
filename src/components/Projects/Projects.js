@@ -44,10 +44,10 @@ const Projects = () => {
       :
       projects.map((p)=>(
       <Link className="" href={"/project/" + p._id}>
-        <div  className="px-6 py-2 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
+        <div  className="px-6 py-8 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
           
-        <div className="h-full border-2 border-gray-200 border-opacity-60  rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
-          <img className="lg:h-48 md:h-36 w-full  object-center shadow-sm " src={p.img} alt="blog"/>
+        <div className="h-full md:border-2 md:border-gray-200 border-opacity-60  rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
+          <img className="lg:h-48 md:h-36 w-full  object-center md:shadow-sm rounded-2xl " src={p.img} alt="blog"/>
           <div className="p-6 ">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">tech</h2>
             <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{p.title}</h1>
@@ -58,7 +58,7 @@ const Projects = () => {
                 <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                   <circle cx="12" cy="12" r="3"></circle>
-                </svg>{Math.floor(Math.random()*100)/2}K
+                </svg>{Math.floor(Math.random()*10)/2}K
               </span>
               {/* <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                 <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ const Projects = () => {
                 </svg>6
               </span> */}
               <span className="text-gray-400 inline-flex items-center leading-none gap-1 text-xl">
-               <AiOutlineHeart size="2rem"/>{100 - Math.floor(Math.random()*100)/2 }K
+               <AiOutlineHeart size="2rem"/>{ Math.floor(Math.random()*10)/2 }K
               </span>
             </div>
           </div>

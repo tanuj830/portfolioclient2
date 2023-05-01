@@ -3,13 +3,13 @@ import React from 'react'
 const FeatureBlog = () => {
   return (
     <section class="container text-gray-600 body-font">
-    <div class=" px-5 py-24 mx-auto">
+    <div class=" md:px-5 py-24 mx-auto">
       <div class="flex flex-col">
        <div className='flex items-center justify-center'><h2 className='fontXl'>Featuring Most Viewed Blogs</h2></div>
-        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-        </div>
+        {/* <div class="flex flex-wrap sm:flex-row flex-col md:py-6 mb-12"> */}
+          {/* <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"></h1> */}
+          {/* <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Recommending the most viewed blogs by users, have a look</p> */}
+        {/* </div> */}
       </div>
       <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">

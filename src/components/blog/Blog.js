@@ -167,7 +167,7 @@ const Blog = () => {
           </div>
           <div className="flex-grow pl-6">
             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 uppercase">tech</h2>
-            <h1 className="title-font text-2xl font-medium text-gray-900 mb-3">{blog.title}</h1>
+            <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{blog.title}</h1>
             <div className="flex flex-col justify-around">
             <p className="leading-relaxed text-justify">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
             <a class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer" onClick={()=>handleClick(blog._id)}>Learn More
