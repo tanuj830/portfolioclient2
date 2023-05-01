@@ -107,27 +107,28 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Admin Pannel</LinkTitle>
-          <input  style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
+          <input className=''  style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
           {
               key==="mai321" ? 
               <>
-               <Section>
-                    <input type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
-                    <input type='text' placeholder='Tag Here' onChange={e=>setTag({tag: e.target.value})}/>
-                    <QuillNoSSRWrapper value={text} onChange={setText} theme="snow" />
+               <div  className=' bg-slate-700'>
+                    <input className='text-black' type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
+                    <input className='' type='text' placeholder='Tag Here' onChange={e=>setTag({tag: e.target.value})}/>
+                    <QuillNoSSRWrapper className='' value={text} onChange={setText} theme="snow" />
                     <button onClick={handleClick} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
-               </Section>
+               </div>
              
-             <Section>
-                    <input type='text' name='title' placeholder='title' onChange={handleProject}/>
-                    <input type='text' name='tech' placeholder='technologies used' onChange={handleProject}/>
-                    <input type='text' name='project_url' placeholder='website link' onChange={handleProject}/>
-                    <input type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>
-                    <QuillNoSSRWrapper  value={projectText} onChange={setProjectText} theme="snow" />
+             <div className=' bg-slate-700'>
+                    <input className='' type='text' name='title' placeholder='title' onChange={handleProject}/>1
+                    <input className='text-black' type='text' name='tech' placeholder='technologies used' onChange={handleProject}/>1
+                    <input className='text-black' type='text' name='project_url' placeholder='website link' onChange={handleProject}/>1
+                    <input className='text-black' type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>1
+                    <QuillNoSSRWrapper className=''  value={projectText} onChange={setProjectText} theme="snow" />1
                     <button onClick={submitProject} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
-               </Section>
+               </div>
                     </>
                : null
+                
           }
         </LinkColumn>
       </LinkList>

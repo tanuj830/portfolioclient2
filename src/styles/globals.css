@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+.fontSm{
+    @apply text-sm  md:mb-24 mb-10 text-gray-900 tracking-wider ;
+}
+.fontMd{
+    @apply text-lg  md:mb-24 mb-10 text-gray-900 tracking-wider ;
+}
+.fontLg{
+    @apply text-2xl font-medium  md:mb-24 mb-10 text-gray-900 tracking-wider ;
+}
+.fontXl{
+    @apply text-5xl font-bold  md:mb-24 mb-10 text-gray-900 tracking-wider leading-relaxed px-3 hover:border-b-4 transition-all  hover:border-black;
+}
+.container{
+    @apply md:px-[30px] lg:px-[10rem] xl:px-[20rem]  md:relative
+}
+}

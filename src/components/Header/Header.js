@@ -10,7 +10,7 @@ const Header = () =>  (
     <Container>
       <Div1>
         <Link href="/">
-        <a style={{display:"flex", alignItems:"center", color:"white"}}><GiBurningMeteor size="2rem" /><Span className='ml-1'>tanujbhatt.in</Span></a>
+        <a style={{display:"flex", alignItems:"center", color:"black"}}><GiBurningMeteor size="2rem" /><Span className='ml-1'>tanujbhatt.in</Span></a>
         </Link>
       </Div1>
       <Div2>
@@ -41,16 +41,16 @@ const Header = () =>  (
         </li>
       </Div2>
       <Div3>
-        <SocialIcons href="https://github.com/tanuj830">
+        <SocialIcons className='hover:bg-neutral-200' href="https://github.com/tanuj830">
           <AiFillGithub />
         </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/tanuj-bhatt-85a2511b5/">
+        <SocialIcons className='hover:bg-neutral-200' href="https://www.linkedin.com/in/tanuj-bhatt-85a2511b5/">
           <AiFillLinkedin />
         </SocialIcons>
-        <SocialIcons href="https://leetcode.com/tanujdotcpp/">
+        <SocialIcons className='hover:bg-neutral-200' href="https://leetcode.com/tanujdotcpp/">
           <SiLeetcode />
         </SocialIcons>
-        <SocialIcons href="https://www.instagram.com/aka_tanuj/">
+        <SocialIcons className='hover:bg-neutral-200' href="https://www.instagram.com/aka_tanuj/">
           <AiFillInstagram />
         </SocialIcons>
       </Div3>

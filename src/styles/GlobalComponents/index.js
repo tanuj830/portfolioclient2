@@ -30,7 +30,7 @@ export const SectionTitle = styled.h1`
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(0, 0, 0, 0.66) 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
@@ -60,7 +60,7 @@ export const SectionText = styled.h3`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.9);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -103,7 +103,7 @@ export const SectionSubText = styled.p`
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
 
 @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
@@ -119,7 +119,7 @@ export const SectionSubText = styled.p`
 export const SecondaryBtn = styled.button`
   color: #FFF;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.33);
+  border: 1px solid rgba(0, 0, 0, 0.33);
   box-sizing: border-box;
   border-radius: 999px;
   padding: 16px 24px;
@@ -288,7 +288,7 @@ export const ImpText = styled.div`
   line-height: 36px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -310,7 +310,7 @@ export const ImpText2 = styled.p`
   line-height: 36px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
