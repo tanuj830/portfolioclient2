@@ -41,7 +41,7 @@ const project = () => {
    </Section>
     :
     <section class="container text-gray-600 body-font">
-  <div class="px-5 py-24 mx-auto flex flex-col">
+  <div class="px-5 md:py-24 mx-auto flex flex-col">
     <div className='flex items-center justify-center'><h1 className='text-fontXl'>{project.title}</h1></div>
     <div class="lg:w-4/6 mx-auto">
       <div class="rounded-lg  overflow-hidden">
