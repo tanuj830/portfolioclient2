@@ -42,38 +42,42 @@ const Projects = () => {
       <div className="bg-slate-500 animate-pulse h-9 w-70 rounded-full mt-3"></div>
   </div>
       :
-      projects.map((p)=>(
-      <Link className="" href={"/project/" + p._id}>
-        <div  className="px-6 py-3 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
-          
-        <div className="h-full bg-neutral-50 border-2 md:border-gray-200 border-opacity-60  rounded-t-3xl rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
-          <img className="lg:h-64 md:h-44 w-full  object-cover md:shadow-sm  " src={p.img} alt="blog"/>
-          <div className="p-8 ">
-            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">tech</h2>
-            <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{p.title}</h1>
-            <p className="leading-relaxed mb-3">{p.disp.slice(0,125)}...</p>
-            <div className="flex items-center flex-wrap ">
-              <p className='text-xl text-gray-400'>2 minutes read</p>
-              <span className="text-gray-400 mr-3 inline-flex items-center border-r-2  lg:ml-auto md:ml-0 ml-auto leading-none text-xl pr-3 py-1 border-gray-300">
-                <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>{Math.floor(Math.random()*10)/2}K
-              </span>
-              {/* <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span> */}
-              <span className="text-gray-400 inline-flex items-center leading-none gap-1 text-xl">
-               <AiOutlineHeart size="2rem"/>{ Math.floor(Math.random()*10)/2 }K
-              </span>
-            </div>
-          </div>
-        </div>
-        </div>
-      </Link>
-    ))
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-7 px-4 md:px-0'>
+        {
+          projects.map((p)=>(
+            <Link className="" href={"/project/" + p._id}>
+              <div  className="   ">
+                
+              <div className="h-full  overflow-hidden  transition-all duration-700 cursor-pointer">
+                <img className="lg:h-64 md:h-44 w-full  object-cover  rounded-3xl  " src={p.img} alt="blog"/>
+                <div className="px-3 py-3">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-gray-400 mb-1 uppercase">web devlopment</h2>
+                  <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{p.title}</h1>
+                  <p className="leading-relaxed mb-3">{p.disp.slice(0,125)}...</p>
+                  <div className="flex items-center flex-wrap ">
+                    <p className='text-xl text-gray-400'>2 minutes read</p>
+                    <span className="text-gray-400 mr-3 inline-flex items-center border-r-2  lg:ml-auto md:ml-0 ml-auto leading-none text-xl pr-3 py-1 border-gray-300">
+                      <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>{Math.floor(Math.random()*10)/2}K
+                    </span>
+                    {/* <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-8 h-8 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span> */}
+                    <span className="text-gray-400 inline-flex items-center leading-none gap-1 text-xl">
+                     <AiOutlineHeart size="2rem"/>{ Math.floor(Math.random()*10)/2 }K
+                    </span>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </Link>
+        ))
+        }
+      </div>
   }
     </div>
   </div>
