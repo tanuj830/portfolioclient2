@@ -44,7 +44,7 @@ const Projects = () => {
       :
       projects.map((p)=>(
       <Link className="" href={"/project/" + p._id}>
-        <div  className="p-8 md:w-1/2 cursor-pointer ">
+        <div  className="px-6 py-2 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
           
         <div className="h-full border-2 border-gray-200 border-opacity-60  rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
           <img className="lg:h-48 md:h-36 w-full  object-center shadow-sm " src={p.img} alt="blog"/>
