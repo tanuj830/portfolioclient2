@@ -44,11 +44,11 @@ const Projects = () => {
       :
       projects.map((p)=>(
       <Link className="" href={"/project/" + p._id}>
-        <div  className="px-6 py-8 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
+        <div  className="px-6 py-3 md:px-8 md:py-8 md:w-1/2 cursor-pointer ">
           
-        <div className="h-full md:border-2 md:border-gray-200 border-opacity-60  rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
-          <img className="lg:h-48 md:h-36 w-full  object-center md:shadow-sm rounded-2xl " src={p.img} alt="blog"/>
-          <div className="p-6 ">
+        <div className="h-full bg-neutral-50 border-2 md:border-gray-200 border-opacity-60  rounded-t-3xl rounded-lg overflow-hidden md:hover:shadow-lg transition-all duration-700">
+          <img className="lg:h-64 md:h-44 w-full  object-cover md:shadow-sm  " src={p.img} alt="blog"/>
+          <div className="p-8 ">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">tech</h2>
             <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{p.title}</h1>
             <p className="leading-relaxed mb-3">{p.disp.slice(0,125)}...</p>
