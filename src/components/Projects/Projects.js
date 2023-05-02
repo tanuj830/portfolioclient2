@@ -50,7 +50,7 @@ const Projects = () => {
                 
               <div className="h-full  overflow-hidden  transition-all duration-700 cursor-pointer">
                 <img className="lg:h-64 md:h-44 w-full  object-cover  rounded-3xl  " src={p.img} alt="blog"/>
-                <div className="px-3 py-3">
+                <div className="px-1 py-3">
                   <h2 className="tracking-widest text-sm title-font font-medium text-gray-400 mb-1 uppercase">web devlopment</h2>
                   <h1 className="title-font text-3xl font-medium text-gray-900 mb-3">{p.title}</h1>
                   <p className="leading-relaxed mb-3">{p.disp.slice(0,125)}...</p>
