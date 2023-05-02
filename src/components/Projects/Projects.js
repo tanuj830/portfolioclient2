@@ -42,7 +42,7 @@ const Projects = () => {
       <div className="bg-slate-500 animate-pulse h-9 w-70 rounded-full mt-3"></div>
   </div>
       :
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-7 px-4 md:px-0'>
+      <div className='Grid'>
         {
           projects.map((p)=>(
             <Link className="" href={"/project/" + p._id}>
