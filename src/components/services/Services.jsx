@@ -5,7 +5,7 @@ import { LinkItem } from '../Footer/FooterStyles'
 const Services = () => {
   return (
     <>
-        <SectionTitle>Services</SectionTitle>
+        <h2 className='fontXl text-center mt-10'>Services</h2>
 
         <SectionSubText>
 <div className = "mt-28 pb-10">

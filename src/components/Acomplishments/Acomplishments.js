@@ -22,8 +22,8 @@ const Acomplishments = () => (
     <div class="flex flex-wrap -m-12 text-center">
     {
       data.map(a=>(
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full ">
+        <div class=" shadow-md px-4 bg-slate-100 py-12 rounded-2xl">
           <h2 class="title-font font-medium text-5xl text-gray-900">{a.number}+</h2>
           <p class="leading-relaxed">{a.text}</p>
         </div>

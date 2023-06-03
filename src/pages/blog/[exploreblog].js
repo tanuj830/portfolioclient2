@@ -18,7 +18,7 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${route.query.exploreblog}`)
 
   return (
       <>
-<div className=''><Header/></div>
+<div className=''></div>
  {
   !blog.disp ?
   <Section>
@@ -29,19 +29,17 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${route.query.exploreblog}`)
 </div>
   </Section>
   :
-  <Section>
-  <SectionTitle>
+  <div className='container mt-20'>
+  <h2 className='fontXl'>
     {blog.title} 
-  </SectionTitle>
+  </h2>
   <small style={{color:"grey", marginBottom:30}}>Published On: {blog.Date ? blog.Date.slice(0,10) : blog.Date}</small>
   <ImpText className='text-justify' dangerouslySetInnerHTML={{ __html : blog.disp}}>
   </ImpText>
-</Section>
+</div>
  }
 
  <RelatedBlogs tag= {blog.tag}/>
-
-    <Footer/>
   </>
   )
 }

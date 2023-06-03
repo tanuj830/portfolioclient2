@@ -7,13 +7,13 @@ import { Section } from '../../styles/GlobalComponents'
 const index = () => {
   return (
     <>
-    <Header />
+  
     
-    <Section>
+    <div className='container'>
         <Services />
-    </Section>
+    </div>
 
-    <Footer />   
+     
     </>
   )
 }

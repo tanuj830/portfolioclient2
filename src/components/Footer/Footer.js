@@ -94,7 +94,7 @@ const Footer = () => {
   }
  
   return (
-    <FooterWrapper className='brightness-200'>
+    <FooterWrapper >
       <hr />
       <LinkList>
         <LinkColumn>
@@ -107,23 +107,23 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Admin Pannel</LinkTitle>
-          <input className=''  style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
+          <input className='text-black outline-none border-b border-gray-500'  style={{padding:"3px 10px"}} onChange={(e)=>setKey(e.target.value)} type='text' placeholder='Enter Key' />
           {
               key==="mai321" ? 
               <>
-               <div  className=' bg-slate-700'>
-                    <input className='text-black' type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
-                    <input className='' type='text' placeholder='Tag Here' onChange={e=>setTag({tag: e.target.value})}/>
+               <div  className=' bg-slate-200 border-2 px-2 text-black'>
+                    <input className='text-black mt-2 px-7 py-3' type='text' placeholder='Title Here' onChange={e=>setTitle({title: e.target.value})}/>
+                    <input className=' mt-2 px-7 py-3' type='text' placeholder='Tag Here' onChange={e=>setTag({tag: e.target.value})}/>
                     <QuillNoSSRWrapper className='' value={text} onChange={setText} theme="snow" />
                     <button onClick={handleClick} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </div>
              
-             <div className=' bg-slate-700'>
-                    <input className='' type='text' name='title' placeholder='title' onChange={handleProject}/>1
-                    <input className='text-black' type='text' name='tech' placeholder='technologies used' onChange={handleProject}/>1
-                    <input className='text-black' type='text' name='project_url' placeholder='website link' onChange={handleProject}/>1
-                    <input className='text-black' type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>1
-                    <QuillNoSSRWrapper className=''  value={projectText} onChange={setProjectText} theme="snow" />1
+             <div className=' bg-slate-200 mt-20 border-2 px-2 text-black'>
+                    <input className='text-black mt-2 px-7 py-3' type='text' name='title' placeholder='title' onChange={handleProject}/>
+                    <input className='text-black mt-2 px-7 py-3' type='text' name='tech' placeholder='technologies used' onChange={handleProject}/>
+                    <input className='text-black mt-2 px-7 py-3' type='text' name='project_url' placeholder='website link' onChange={handleProject}/>
+                    <input className='text-black mt-2 px-7 py-3' type='text' name='code_url' placeholder='github code url' onChange={handleProject}/>
+                    <QuillNoSSRWrapper className='text-black'  value={projectText} onChange={setProjectText} theme="snow" />
                     <button onClick={submitProject} style={{padding:"3px 10px",marginTop:100}}>Push Code</button>
                </div>
                     </>
@@ -137,16 +137,16 @@ const Footer = () => {
           <Slogan>Are you finding me ?</Slogan>
         </CompanyContainer>
         <SocialContainer>
-        <SocialIcons className='mx-1' href="https://github.com/tanuj830">
+        <SocialIcons className='mx-1 text-black' href="https://github.com/tanuj830">
           <AiFillGithub  className='fs-1 '/>
         </SocialIcons>
-        <SocialIcons className='mx-1' href="https://www.linkedin.com/in/tanuj-bhatt-85a2511b5/">
+        <SocialIcons className='mx-1 text-black' href="https://www.linkedin.com/in/tanuj-bhatt-85a2511b5/">
           <AiFillLinkedin  className='fs-1 '/>
         </SocialIcons>
-        <SocialIcons className='mx-1' href="https://leetcode.com/tanujdotcpp/">
+        <SocialIcons className='mx-1 text-black' href="https://leetcode.com/tanujdotcpp/">
           <SiLeetcode className='fs-1 ' />
         </SocialIcons>
-        <SocialIcons className='mx-1' href="https://www.instagram.com/aka_tanuj/">
+        <SocialIcons className='mx-1 text-black' href="https://www.instagram.com/aka_tanuj/">
           <AiFillInstagram className='fs-1 ' />
         </SocialIcons>
         </SocialContainer>

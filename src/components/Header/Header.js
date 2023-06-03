@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <div className=" inline md:hidden  z-50 relative ">
         {/* for mobile */}
-        <div  className="container  w-full bg-white text-black">
+        <div  className="container mt-3 w-full bg-white text-black">
           <div className="  flex justify-between items-center gap-4 px-4 md:gap-44">
             <div className="flex items-center  py-4">
               <Link className="" href="/">
@@ -76,7 +76,7 @@ const Header = () => {
             {/* <div> */}
             {showMenu === true ? (
               <div className="relative  w-full   py-1">
-                <div style={{backgroundColor:"rgba(0, 0, 0, 0.29)", backdropFilter: "blur(6px)"}} className="absolute   rounded-b-xl  text-white h-[80vh] w-full  p-10">
+                <div style={{backgroundColor:"rgba(0, 0, 0, 0.1)", backdropFilter: "blur(7px)"}} className="absolute   rounded-b-3xl  text-black h-[80vh] w-full  p-10">
                   <div className="flex justify-evenly  w-full h-full flex-col">
                     <div className='text-center'>
                     <Link className="brightness-200" href="/project">

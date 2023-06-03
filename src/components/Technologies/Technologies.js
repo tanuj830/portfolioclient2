@@ -14,8 +14,8 @@ const Technologies = () =>  (
       <p class="lg:w mx-auto leading-relaxed text-justify md:text-justify">We use technology to accomplish various tasks in our daily lives, in brief; we can describe technology as products and processes used to simplify our daily lives. We use technology to extend our abilities, making people the most crucial part of any technological system. Technology is also an application of science used to solve problems.</p>
     </div>
     <div class="flex flex-wrap -m-2">
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+        <div class="h-full flex items-center bg-slate-100 shadow-md  p-4 rounded-2xl">
           <DiReact size='10rem' />
           <div class="flex-grow">
             <h2 class="text-gray-900 title-font font-medium">Front-End</h2>
@@ -23,8 +23,8 @@ const Technologies = () =>  (
           </div>
         </div>
       </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+        <div class="h-full flex items-center bg-slate-100 shadow-md  p-4 rounded-2xl">
         <DiFirebase size='10rem' />
           <div class="flex-grow">
             <h2 class="text-gray-900 title-font font-medium">Back-End</h2>
@@ -32,8 +32,8 @@ const Technologies = () =>  (
           </div>
         </div>
       </div>
-      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+        <div class="h-full flex items-center bg-slate-100 shadow-md  p-4 rounded-2xl">
         <BiBitcoin size='10rem' />
           <div class="flex-grow">
             <h2 class="text-gray-900 title-font font-medium">Blockchain</h2>

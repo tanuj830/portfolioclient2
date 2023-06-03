@@ -15,11 +15,11 @@ const MemeComponent = () => {
 
   return (
     <>
-    <Header />
+    
     <Section>
-        <SectionTitle className=''>
+        <h2 className='fontXl text-center'>
         Popular Memes╭(◔ ◡ ◔)/ 
-        </SectionTitle>
+        </h2>
 
         <div className='flex items-center justify-between'>
             <div>
@@ -40,14 +40,14 @@ const MemeComponent = () => {
 
                    {
                     memes.preview  ?  <div className='flex justify-between items-center'>
-                    <div><h6 className='text-slate-400'>Posted by <b className='text-slate-300'>{memes.author}</b></h6></div>
-                    <div><h6 className='text-slate-400'>Likes <b className='text-slate-300'>{memes.ups}</b></h6></div>
+                    <div><h6 className='text-black'>Posted by <b className='text-black'>{memes.author}</b></h6></div>
+                    <div><h6 className='text-black'>Likes <b className='text-black'>{memes.ups}</b></h6></div>
                 </div>: null
                    }
 
                         <div className='flex items-center justify-center flex-col'>
                         <div>
-                            <h1>{memes.title}</h1>
+                            <h1 className='text-black'>Title: {memes.title}</h1>
                         </div>
 
                         <div>
@@ -57,9 +57,9 @@ const MemeComponent = () => {
                    </div>
             </div> : null
         }
-        <p className='text-center mt-10  text-slate-400'>Powered by Reddit</p>
+        <p className='text-center mt-10  text-black'>Powered by Reddit</p>
     </Section>
-    <Footer />
+    
     </>
   )
 }

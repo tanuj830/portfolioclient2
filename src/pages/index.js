@@ -15,7 +15,6 @@ import { Section } from '../styles/GlobalComponents';
 const Home = () => {
   return (
     <>
-    <Header/>
         <Hero />
       <Projects />
       <Technologies />
@@ -25,7 +24,6 @@ const Home = () => {
       {/* <Timeline /> */}
       <Testimonials/>
       <Contact/>
-      <Footer/>
     </>
   );
 };

@@ -19,28 +19,27 @@ const index = () => {
 
   return (
     <>
-    <Header />
             <Section>
-        <SectionTitle>
+        <h2 className='fontXl text-center'>
             Predicting Country By Name
-        </SectionTitle>
-        <div className='w-100 mt-12'>
-            <input type="text" placeholder='Enter Your First OR Last Name(avoid spaces)' onChange={e=>setName(e.target.value)} className='px-2 md:px-8 py-4 rounded-md w-100 text-black' />
+        </h2>
+        <div className='w-100 mt-12 text-black'>
+            <input type="text" placeholder='Enter Your First OR Last Name(avoid spaces)' onChange={e=>setName(e.target.value)} className='px-2 md:px-8 py-4 rounded-md w-100 outline-none border-b border-gray-700 text-black' />
             <SecondaryBtn className='' onClick={handleSubmit}>Search</SecondaryBtn>
         </div>
 
         <div className=''>
             {
                 countryData ? <div>
-                            {  countryData.country  ?   <SectionText>Hey, <h2 className='uppercase text-white'>{countryData.name}</h2> here are some top matching results</SectionText> : null}
+                            {  countryData.country  ?   <SectionText>Hey, <h2 className='uppercase font-bold'>{countryData.name}</h2> Here are some top matching results</SectionText> : null}
                           <Boxes>
     {
         countryData.country ? countryData.country.map(con=>(
-            <Box>{console.log(con)}  
+            <div className='text-black bg-slate-200 rounded-2xl p-7'>{console.log(con)}  
             <p>Country Code</p>
-          <BoxNum>{con.country_id}</BoxNum>
-          <BoxText>Matching {Math.round(con.probability * 10)} / 10</BoxText>
-        </Box> 
+          <h6 className='fontXl'>{con.country_id}</h6>
+          <h6>Matching {Math.round(con.probability * 10)} / 10</h6>
+        </div> 
       )) : null
     }
   </Boxes>
@@ -49,7 +48,6 @@ const index = () => {
             }
         </div>
     </Section>
-    <Footer />
     </>
   )
 }

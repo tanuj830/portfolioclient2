@@ -78,7 +78,7 @@ const Blog = () => {
   ]
   return (
     <> 
-<div className='container'><Header/></div>
+<div className='container'></div>
 {/* showing searched data */}
 <div className="flex justify-center items-center px-4 md:mt-20">
       <div className="   flex justify-center items-start">
@@ -145,16 +145,33 @@ const Blog = () => {
     <div className="flex flex-wrap -mx-4 -my-8">
     {
        blogs.length == 0 ?
-       <Section >
-          <div className="w-100 flex flex-column">
-              <div className="bg-slate-500 animate-pulse h-10 w-50 rounded-full"></div>
-              <div className="bg-slate-500 animate-pulse h-1 w-100 rounded-full mt-12"></div>
-              <div className="bg-slate-500 animate-pulse h-7 w-40 rounded-full mt-3"></div>
-              <div className="bg-slate-500 animate-pulse h-7 w-50 rounded-full mt-3"></div>
-              <div className="bg-slate-500 animate-pulse h-10 w-90 rounded-full mt-20"></div>
-              <div className="bg-slate-500 animate-pulse h-9 w-90 rounded-full mt-5"></div>
+       <div className="w-full grid md:grid-cols-3">
+          <div className="w-full flex flex-column ">
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-56 rounded-full mt-12"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[70%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
           </div>
-       </Section>
+          <div className="md:inline hidden">
+          <div className="w-full flex flex-column ">
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-56 rounded-full mt-12"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[70%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
+          </div>
+          </div>
+          <div className="md:inline hidden">
+          <div className="w-full flex flex-column ">
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-56 rounded-full mt-12"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[70%] rounded-full mt-3"></div>
+              <div className="bg-slate-200 animate-pulse h-12 w-[90%] rounded-full mt-3"></div>
+          </div>
+          </div>
+       </div>
       :
       blogs.reverse().map(blog=>(
         <div className="py-8 px-4 lg:w-1/3">
@@ -192,7 +209,7 @@ const Blog = () => {
     </div>
   </div>
 </section>
-      <Footer/> 
+      
     </>
   )
 }

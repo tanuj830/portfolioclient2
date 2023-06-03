@@ -24,7 +24,7 @@ const Projects = () => {
   return(
     <>
     {
-      homepage == false ? <div className='container'><Header/></div> : null
+      homepage == false ? <div className='container'></div> : null
     }
     <section id="projects" className="md:mb-0 mb-20 container text-gray-600 body-font">
   <div className=" md:px-5 py-24 mx-auto">

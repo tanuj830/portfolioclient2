@@ -117,7 +117,7 @@ export const SectionSubText = styled.p`
   }
 `
 export const SecondaryBtn = styled.button`
-  color: #FFF;
+  color: black;
   background: none;
   border: 1px solid rgba(0, 0, 0, 0.33);
   box-sizing: border-box;
@@ -138,7 +138,7 @@ export const SecondaryBtn = styled.button`
   &:hover {
     color: #0f1624;
     background: #fff;
-    border: 1px solid #fff;
+    border: 1px solid black;
   }
 
   &:active {

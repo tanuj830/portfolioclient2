@@ -148,7 +148,7 @@ export const LinkTitle = styled.h4`
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: rgba(0, 0, 0, 0.4);
+	color: black;
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {

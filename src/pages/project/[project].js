@@ -32,7 +32,7 @@ const project = () => {
 
     return (
    <>
-<div className='container'><Header/></div>
+<div className='container'></div>
    {!project.disp ?
    <Section>
            <div className="w-100 flex flex-column">
@@ -118,7 +118,7 @@ const project = () => {
     </div>
   </div>
 </section>}
-     <Footer />
+
    </>
   )
 }
