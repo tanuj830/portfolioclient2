@@ -5,7 +5,7 @@ import Button from '../../styles/GlobalComponents/Button';
 // import { LeftSection } from '';
 
 const Hero = () => (
-  <section id='home' class="container text-gray-600 body-font">
+  <section id='home' class="container text-gray-600 body-font pt-20 md:pt-0">
   <div class="container mx-auto flex px-5 md:py-24 md:flex-row flex-col-reverse items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col  md:text-left mb-16 md:mb-0 items-center text-center">
       <div>

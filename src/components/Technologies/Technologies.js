@@ -11,7 +11,7 @@ const Technologies = () =>  (
       <h1 class=" fontXl">Technologies</h1>
     </div>
     <div class="flex flex-col text-center w-full mb-8 md:mb-20">
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-justify md:text-center">We use technology to accomplish various tasks in our daily lives, in brief; we can describe technology as products and processes used to simplify our daily lives. We use technology to extend our abilities, making people the most crucial part of any technological system. Technology is also an application of science used to solve problems.</p>
+      <p class="lg:w mx-auto leading-relaxed text-justify md:text-justify">We use technology to accomplish various tasks in our daily lives, in brief; we can describe technology as products and processes used to simplify our daily lives. We use technology to extend our abilities, making people the most crucial part of any technological system. Technology is also an application of science used to solve problems.</p>
     </div>
     <div class="flex flex-wrap -m-2">
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
