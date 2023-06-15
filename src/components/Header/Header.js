@@ -3,7 +3,8 @@ import { SiLeetcode } from 'react-icons/si';
 import { Div1, NavLink, SocialIcons } from './HeaderStyles';
 import Link from "next/link";
 import React from "react";
-import { RxCross2, RxHamburgerMenu } from 'react-icons/rx';
+import {  FaHamburger } from 'react-icons/fa';
+import { GiCrossedBones } from 'react-icons/gi';
 
 
 // import { DiCssdeck } from 'react-icons/di';
@@ -59,14 +60,14 @@ const Header = () => {
                   className="text-3xl text-stone-700 font-extrabold mr-3 brightness-200"
                   onClick={handleClick}
                 >
-                  <RxHamburgerMenu />
+                  <FaHamburger />
                 </button>
               ) : (
                 <button
                   className="text-3xl text-stone-700 font-extrabold mr-3 brightness-200"
                   onClick={handleClick}
                 >
-                  <RxCross2 />
+                  <GiCrossedBones />
                 </button>
               )}
             </div>
