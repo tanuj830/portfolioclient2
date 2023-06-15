@@ -34,13 +34,15 @@ const Projects = () => {
     <div className="flex flex-wrap -m-4">
     {
       projects.length == 0 ? 
-      <div className="w-100 flex flex-column px-4 py-10  animate-pulse" style={{border:"solid 2px gray", borderRadius:15}}>
-      <div className="bg-slate-500 animate-pulse h-40 w-90 rounded-xl"></div>
-      <div className="bg-slate-500 animate-pulse h-7 w-40 rounded-full mt-4"></div>
-      <div className="bg-slate-500 animate-pulse h-8 w-100 rounded-full mt-5"></div>
-      <div className="bg-slate-500 animate-pulse h-8 w-50 rounded-full mt-8"></div>
-      <div className="bg-slate-500 animate-pulse h-9 w-70 rounded-full mt-3"></div>
+<div className='w-full px-10'>
+<div className="w-100 flex flex-column px-4 py-10  animate-pulse" style={{border:"solid 2px gainsboro", borderRadius:15}}>
+      <div className="bg-slate-200 animate-pulse h-40 w-90 rounded-xl"></div>
+      <div className="bg-slate-200 animate-pulse h-7 w-40 rounded-full mt-4"></div>
+      <div className="bg-slate-200 animate-pulse h-8 w-100 rounded-full mt-5"></div>
+      <div className="bg-slate-200 animate-pulse h-8 w-50 rounded-full mt-8"></div>
+      <div className="bg-slate-200 animate-pulse h-9 w-70 rounded-full mt-3"></div>
   </div>
+</div>
       :
       <div className='Grid'>
         {
