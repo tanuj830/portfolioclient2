@@ -74,18 +74,23 @@ const FeatureBlog = () => {
       </div>
       <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       {
-       blogs.length == 0 ?<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-          <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503"/>
-          </div>
-          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
-          <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-          <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>:<div className='Grid'>
+       blogs.length == 0 ?
+       <div className='w-full px-8'>
+<div className="w-100 flex flex-column px-4 py-10  animate-pulse" style={{border:"solid 2px gainsboro", borderRadius:15}}>
+      <div className="bg-slate-200 animate-pulse h-40 w-90 rounded-xl"></div>
+      <div className="bg-slate-200 animate-pulse h-7 w-40 rounded-full mt-4"></div>
+      <div className="bg-slate-200 animate-pulse h-8 w-100 rounded-full mt-5"></div>
+      <div className="bg-slate-200 animate-pulse h-8 w-50 rounded-full mt-8"></div>
+      <div className='flex justify-between items-center'>
+      <div className="bg-slate-200 animate-pulse h-9 w-36 rounded-full mt-3"></div>
+      <div className='flex gap-3 items-center'>
+      <div className="bg-slate-200 animate-pulse h-9 w-14 rounded-full mt-3"></div>
+      <div className="bg-slate-200 animate-pulse h-9 w-14 rounded-full mt-3"></div>
+      </div>
+      </div>
+  </div>
+</div>
+       :<div className='Grid'>
         {
            blogs.map((p,ind)=>(
             <>

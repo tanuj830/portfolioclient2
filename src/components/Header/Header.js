@@ -46,7 +46,7 @@ const Header = () => {
         <div  className="container mt-3 w-full bg-white text-black">
           <div className="  flex justify-between items-center gap-4 px-4 md:gap-44">
             <div className="flex items-center  py-4">
-              <Link className="" href="/">
+              <Link className="cursor-pointer" href="/">
                 <img
                   className="w-32"
                   src="https://firebasestorage.googleapis.com/v0/b/portfolio-e0b16.appspot.com/o/ezgif.com-crop%20(6).gif?alt=media&token=635329e6-5e38-400b-b393-cd39ffaf39cd&_gl=1*9dwgq6*_ga*MTE5MDAxODIzMC4xNjU4NTQ4MzQ0*_ga_CW55HF8NVT*MTY4NTgxNDg4My4yOS4xLjE2ODU4MTU3OTYuMC4wLjA."
@@ -127,9 +127,9 @@ const Header = () => {
         <div className='py-5 container'>
     <div  className=' flex justify-between'>
       <Div1>
-      <Link className="" href="/">
+      <Link className="cursor-pointer" href="/">
                 <img
-                  className="w-64"
+                  className="w-64 cursor-pointer"
                   src="https://firebasestorage.googleapis.com/v0/b/portfolio-e0b16.appspot.com/o/ezgif.com-crop%20(6).gif?alt=media&token=635329e6-5e38-400b-b393-cd39ffaf39cd&_gl=1*9dwgq6*_ga*MTE5MDAxODIzMC4xNjU4NTQ4MzQ0*_ga_CW55HF8NVT*MTY4NTgxNDg4My4yOS4xLjE2ODU4MTU3OTYuMC4wLjA."
                 />
               </Link>
