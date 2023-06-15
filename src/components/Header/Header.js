@@ -1,36 +1,10 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { SiLeetcode } from 'react-icons/si';
-// import { DiCssdeck } from 'react-icons/di';
-import { GiBurningMeteor } from 'react-icons/gi';
-import { Container, Div1, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
-
-
-
+import { Div1, NavLink, SocialIcons } from './HeaderStyles';
 import Link from "next/link";
-// import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-// import { Container, Div3, NavLink, NavLinkLogo, Link, div } from './HeaderStyles';
 import React from "react";
-import {
-  BsAirplaneEngines,
-  BsFillCarFrontFill,
-  BsTelegram,
-} from "react-icons/bs";
-// import SearchBar from "./SearchBar";
-import { AiOutlineContacts, AiOutlineHome } from "react-icons/ai";
-import { GiMountains } from "react-icons/gi";
-import { BsGithub } from "react-icons/bs";
-import { BsSearch } from "react-icons/bs";
-// import {  } from "react-icons/rx";
-import { GrChannel } from "react-icons/gr";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-import { FaRegKeyboard } from "react-icons/fa";
-import { TbBrandBlogger } from "react-icons/tb";
-import axios from "axios";
-import { MdCall, MdModeOfTravel, MdOutlineLocalOffer } from "react-icons/md";
-import { RiWhatsappFill } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
-import { FiPhoneCall } from "react-icons/fi";
+
 
 const Header = () => {
   const [showMenu, setShowMenu] = React.useState(false);
