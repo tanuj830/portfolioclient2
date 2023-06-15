@@ -33,7 +33,18 @@ axios.get(`https://portfolio-38ir.onrender.com/blog/${route.query.exploreblog}`)
   <h2 className='fontXl'>
     {blog.title} 
   </h2>
-  <small style={{color:"grey", marginBottom:30}}>Published On: {blog.Date ? blog.Date.slice(0,10) : blog.Date}</small>
+<ImpText >
+<div className='flex justify-between items-center'>
+<div className=''><small style={{color:"grey", marginBottom:30}} className='text-xl'>Published On: {blog.Date ? blog.Date.slice(0,10) : blog.Date}</small></div>
+  <a className="inline-flex items-center ">
+              <img alt="blog"  src="https://firebasestorage.googleapis.com/v0/b/accm-9ac3a.appspot.com/o/teams%2FPicsart_23-03-17_20-58-27-449.png?alt=media&token=40f8bac9-b1c2-4f62-a192-3a8e2e49e099" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+              <span className="flex-grow flex flex-col pl-3">
+                
+                <span className="title-font text-xl font-medium text-gray-900">Tanuj Bhatt</span>
+              </span>
+            </a>
+</div>
+</ImpText>
   <ImpText className='text-justify' dangerouslySetInnerHTML={{ __html : blog.disp}}>
   </ImpText>
 </div>
