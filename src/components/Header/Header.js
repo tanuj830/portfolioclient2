@@ -3,8 +3,8 @@ import { SiLeetcode } from 'react-icons/si';
 import { Div1, NavLink, SocialIcons } from './HeaderStyles';
 import Link from "next/link";
 import React from "react";
-import {  FaHamburger } from 'react-icons/fa';
-import { GiCrossedBones } from 'react-icons/gi';
+// import {  FaHamburger } from 'react-icons/fa';
+// import { GiCrossedBones } from 'react-icons/gi';
 
 
 // import { DiCssdeck } from 'react-icons/di';
@@ -21,7 +21,7 @@ import { GiCrossedBones } from 'react-icons/gi';
 // import { GiMountains } from "react-icons/gi";
 // import { BsGithub } from "react-icons/bs";
 // import { BsSearch } from "react-icons/bs";
-// import {  } from "react-icons/rx";
+import { RxCross2, RxHamburgerMenu} from "react-icons/rx";
 // import { GrChannel } from "react-icons/gr";
 // import { FaRegKeyboard } from "react-icons/fa";
 // import { TbBrandBlogger } from "react-icons/tb";
@@ -60,14 +60,14 @@ const Header = () => {
                   className="text-3xl text-stone-700 font-extrabold mr-3 brightness-200"
                   onClick={handleClick}
                 >
-                  <FaHamburger />
+                  <RxHamburgerMenu />
                 </button>
               ) : (
                 <button
                   className="text-3xl text-stone-700 font-extrabold mr-3 brightness-200"
                   onClick={handleClick}
                 >
-                  <GiCrossedBones />
+                  <RxCross2 />
                 </button>
               )}
             </div>
